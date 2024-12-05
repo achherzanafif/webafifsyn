@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,15 +15,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () { return view('welcome');});
+//Route::get('/contact', function () { return view('contact');});
 
-Route::get('/contact', function () { return view('contact');});
+//Route::get('/login', function () { return view('login');});
 
-// Route::get('/login', function () { return view('login');});
+//Route::get('/webafif', function () { return view('webafif');});
 
-Route::get('/webafif', function () { return view('webafif');});
+//Route::get('/tentang', function () { return view('tentang');});
 
-Route::get('/tentang', function () { return view('tentang');});
+//Route::view('/profile', 'profile');
 
-Route::view('/profile', 'profile');
-
-Route::get('/login', [AuthController::class, 'index']);
+Route::get('/login' ,[AuthController::class, 'login']);

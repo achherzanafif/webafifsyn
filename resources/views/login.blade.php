@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-   <h1>INI HALAMAN TAMPILAN</h1> 
+    <h1>INI ADALAH HALAMAN LOGIN</h1>
 </body>
 </html>

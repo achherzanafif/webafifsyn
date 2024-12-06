@@ -18,9 +18,9 @@ Route::get('/', function () { return view('welcome');});
 
 Route::get('/login', function () { return view('login');});
 
-//Route::get('/webafif', function () { return view('webafif');});
+Route::get('/registrasi', function () { return view('registrasi');});
 
-Route::get('/index', function () { return view('index');});
+Route::get('/dashboard', function () { return view('dashboard');});
 
 
 Route::get('/login', [AuthController::class, 'index']);
